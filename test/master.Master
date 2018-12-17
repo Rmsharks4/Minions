@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="test.master" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background: url(images/cover.jpg) no-repeat fixed; background-size: cover;">
+    <form runat="server">
+
+                    
+        <asp:textbox ID="Textbox1" runat="server" style="margin-left: 500px;" Height="26px" Width="614px"></asp:textbox>
+    <asp:button ID="Button1" style=" font-family: Broadway;  font-size: 40px; color: #ffffff; background-color: midnightblue;" Text="SEARCH" onclick="searchUserandHash" runat="server" ></asp:button>
+        <br />
+        <div style="position:absolute; top: 50px; left: 500px;">
+        <br /><asp:Label ID="Name" runat="server" style="font-family: broadway; font-size: 40px;" ForeColor="midnightblue" ></asp:Label>
+        <br />
+        <asp:Label ID="Uname" runat="server" style="font-family: broadway; font-size: 40px; " ForeColor="midnightblue"></asp:Label>
+       <br /><br />
+      </div>
+
+        <div style="position: fixed; top: 10px; left: 10px;">
+        <asp:Image id="useri" runat="server" style="width: 400px; height: 250px;"/>
+        <br />
+       <br />
+            <asp:FileUpload ID="F" runat="server"/>
+        <asp:Button id="upload" runat="server" Text="Upload"/>
+        <asp:Button ID="remove" runat="server" Text="Remove"/>
+         <asp:Label ID="sorry" runat="server"></asp:Label>
+       
+            </div>
+
+        <br /><br /><br /><br />
+
+        <div style="height: 0px; padding-top: 150px; padding-left: 450px; padding-right: 400px;padding-top:50px; text-align: left;">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+ </div>
+
+       
+        <div style="position: fixed; right: 0;">
+        <asp:Label ID="Label1" runat="server" ForeColor="White" BackColor="#000066"></asp:Label>
+        
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <asp:Button ID="b1" Text=" Network " style=" font-family: Broadway;  font-size: 45px; color: #ffffff; background-color: midnightblue;" runat="server"></asp:Button>
+        <br /><br />
+                    <asp:Button ID="b2" Text=" Profile " style=" font-family: Broadway;  font-size: 45px; color: #ffffff; background-color: midnightblue;" runat="server"></asp:Button>
+          <br /><br />
+					<asp:Label ID="un_notif" runat="server"></asp:Label>
+                    <asp:Button ID="b3" Text=" Commands " style="font-family: Broadway;  font-size: 45px; color: #ffffff; background-color: midnightblue;" runat="server"></asp:Button>
+          <br /><br />
+            <asp:Label ID="notify" runat="server"></asp:Label>
+        <asp:Button ID="b4" Text=" Secrets " style=" font-family: Broadway;  font-size: 45px; color: #ffffff; background-color: midnightblue;" runat="server"></asp:Button>
+          <br /><br />
+                    <asp:Button ID="b5" Text=" About Us " style=" font-family: Broadway;  font-size: 45px; color: #ffffff; background-color: midnightblue;" runat="server"></asp:Button>
+           <br /><br />
+                    <asp:Button ID="Button2" Text=" Friends " style="font-family: Broadway;  font-size: 45px; color: #ffffff; background-color: midnightblue;" runat="server"></asp:Button>
+                    
+            <br /><br />
+                    <asp:Button ID="b6" Text=" Run Away " style=" font-family: Broadway;  font-size: 45px; color: #ffffff; background-color: midnightblue;" runat="server"></asp:Button>
+            </div>        
+            <asp:label ID="Error" runat="server"></asp:label>
+   
+    </form>
+</body>
+</html>
